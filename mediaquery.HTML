@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE WEB DESIGN</title>
+    <style>
+.box1,.box3,.box5{
+       height: 25vh;
+       width: 80%;
+       background-color: pink;
+       border: 2px black solid;
+       margin: auto;
+       margin: 20px;
+    }
+    .box2,.box4{
+        height: 25vh;
+        width: 80%;
+        background-color: yellow;
+        border: 2px black solid;
+        margin: auto;
+        margin: 20px;
+    }
+    @media(max-width:1200px){
+        .box1,.box3,.box5{
+            background-color: rgb(92, 12, 138);
+        }
+        .box2,.box4{
+            background-color: rgb(128, 75, 0);
+            border-radius: 50%;
+        }
+    }
+    @media(max-width:900px){
+        .box1,.box3,.box5{
+            background-color: rgb(0, 251, 255);
+        }
+        .box2,.box4{
+            background-color: rgb(128, 0, 122);
+        }
+    }
+    @media(max-width:701px){
+        .box1,.box3,.box5{
+            background-color: red;
+            border-radius: 50%;
+        }
+        .box2,.box4{
+            background-color: aqua;
+        }
+    }
+    @media(max-width:400px){
+        .box1,.box3,.box5{
+            background-color: blue;
+            height: 25vh;
+            width: 80%;
+
+        }
+        .box2,.box4{
+            background-color: green;
+            height: 25vh;
+            width: 80%;
+        }
+    }
+    </style>
+</head>
+    
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+  <div class="box5"></div>
+</body>
+
+</html>

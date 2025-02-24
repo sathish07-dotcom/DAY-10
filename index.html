@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in css</title>
+    <style>
+        body{
+            background-color: rgb(198, 186, 186);
+        }
+        h1{
+            text-align: center;
+            background-color: yellow;
+            color: red;
+            font-size: 50px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box{
+            height: 120px;
+            width: 350px;
+            background-color: pink;
+            border: 2px red solid;
+            
+            animation-name: fontAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite ;
+            animation-direction: reverse;
+        }
+
+        @keyframes fontAnimation {
+            form{
+                font-size: 20px;
+            }
+            to{
+                font-size: 60px;
+            }
+        }
+        .box1{
+            margin-top: 50px;
+            height: 120px;
+            width: 350px;
+            background-color: pink;
+            border: 2px red solid;
+    
+            animation-name: colorAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes colorAnimation {
+            form{
+                background-color: pink;
+            }
+            to{
+                background-color: green;
+            }
+        }
+        .box2{
+            margin-top: 50px;
+            height: 120px;
+            width: 50px;
+            background-color: pink;
+            border: 2px red solid;
+    
+            animation-name: widthAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes widthAnimation {
+            form{
+                width: 50px; 
+            }
+            to{
+                width: 300px;
+                border-radius: 50%;
+                background-color: yellow;
+            }
+        }
+        .box3{
+            margin-top: 50px;
+            height: 20px;
+            width: 350px;
+            background-color: pink;
+            border: 2px red solid;
+    
+            animation-name: heightAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes heightAnimation {
+            0%{
+                height: 50px;
+                background-color: black;
+            }
+            50%{
+                height: 150px;
+                background-color: green;
+            }
+            100%{
+                height: 250px;
+                background-color: blue;
+            }
+        }
+        .con1{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations</h1>
+    <div class="container">
+    <div class="box">sagar</div>
+    <div class="box1"></div>
+    </div>
+    <div class="con1">
+    <div class="box2"></div>
+    <div class="box3"></div>
+    </div>
+
+    <h1><a href="./mediaquery.HTML">Media Querys</a></h1>
+</body>
+</html>
